@@ -146,8 +146,229 @@
                 margin: 0 6px;
                 font-size: 14px;
             }
-        }
-    </style>
+        } 
+/* DESAIN PROFESIONAL SENTRA DOKUMEN INDONESIA */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f3f6fb;
+    color: #243247;
+}
+
+header {
+    background: linear-gradient(135deg, #081e3d, #174b87);
+    padding: 35px 20px;
+}
+
+header h1 {
+    letter-spacing: 1px;
+    font-size: clamp(24px, 4vw, 38px);
+}
+
+nav {
+    background: #081e3d;
+    padding: 18px 10px;
+}
+
+nav a:hover {
+    color: #f5c66a;
+}
+
+.hero {
+    background: linear-gradient(135deg, #eaf2ff, #ffffff);
+    padding: 85px 20px;
+}
+
+.hero h2 {
+    color: #123766;
+    font-size: clamp(28px, 4vw, 43px);
+    line-height: 1.2;
+}
+
+.hero p {
+    color: #4d5c73;
+    font-size: 17px;
+}
+
+.tombol {
+    background: #128052;
+    padding: 15px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.tombol:hover {
+    background: #0d6340;
+    transform: translateY(-2px);
+}
+
+.card {
+    border: 1px solid #e4eaf3;
+    border-radius: 16px;
+    padding: 30px 22px;
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px #12376620;
+}
+
+.card h3 {
+    color: #123766;
+}
+
+.layanan h2,
+.tentang h2 {
+    font-size: 30px;
+}
+
+footer {
+    background: #081e3d;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 55px 18px;
+    }
+
+    .card {
+        padding: 24px 18px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+}
+
+     
+/* DESAIN KARTU LAYANAN PREMIUM */
+
+.layanan {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.layanan h2 {
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.card {
+    border: 1px solid #e1e8f2;
+    border-top: 4px solid #d4a74d;
+    box-shadow: 0 8px 25px #12376612;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px #12376625;
+}
+
+.ikon {
+    background: #edf3fc;
+    width: 85px;
+    height: 85px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.card h3 {
+    min-height: 50px;
+}
+
+.card p {
+    min-height: 75px;
+    color: #526078;
+}
+
+/* DESAIN BERANDA BARU */
+
+.hero {
+    background: linear-gradient(135deg, #0b2344, #174b87);
+    color: white;
+    padding: 90px 20px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: clamp(30px, 4vw, 46px);
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.hero p {
+    color: #e1eaf5;
+}
+
+.hero .label-hero {
+    color: #f5c66a;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.tombol-hero {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.tombol-lihat {
+    display: inline-block;
+    padding: 15px 24px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tombol-lihat:hover {
+    background: white;
+    color: #123766;
+}
+/* BACKGROUND FOTO PROFESIONAL */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(6, 24, 48, 0.25),
+rgba(6, 24, 48, 0.35)
+        ),
+        url("background-baru.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h2 {
+    color: white;
+}
+
+.hero p {
+    color: #eef4ff;
+}
+
+.hero .label-hero {
+    color: #f5c66a;
+}
+</style>
 </head>
 
 <body>
@@ -163,25 +384,37 @@
         <a href="#kontak">Kontak</a>
     </nav>
 
-    <section class="hero">
-        <h2>Solusi Kebutuhan Dokumen Anda</h2>
+    
+<section class="hero">
+    <p class="label-hero">
+        JASA PENGETIKAN & DESAIN DOKUMEN
+    </p>
 
-        <p>
-            Membantu kebutuhan pengetikan,
-            penyusunan, perapian, dan desain
-            dokumen untuk keperluan pribadi
-            maupun usaha.
-        </p>
+    <h2>Dokumen Rapi, Tampilan Profesional</h2>
 
+    <p>
+        Sentra Dokumen Indonesia melayani
+        pengetikan dokumen, pengolahan Excel,
+        pembuatan CV, proposal, dan e-brosur
+        untuk kebutuhan pribadi maupun usaha.
+    </p>
+
+    <div class="tombol-hero">
         <button class="tombol"
             onclick="pesan('Konsultasi Dokumen')">
-            Konsultasi via WhatsApp
+            Konsultasi WhatsApp
         </button>
-    </section>
 
-    <section class="layanan" id="layanan">
+        <a href="#layanan" class="tombol-lihat">
+            Lihat Layanan
+        </a>
+    </div>
+</section>
+  
 
-        <h2>Layanan Kami</h2>
+<section class="layanan" id="layanan">
+    <h2>Layanan Kami</h2>
+    
 
         <div class="daftar">
 
@@ -235,7 +468,127 @@
                     onclick="pesan('E-Brosur dan Proposal')">
                     Pesan Sekarang
                 </button>
-            </div>
+            </div> 
+<!-- LAYANAN 5: PRESENTASI POWERPOINT -->
+<div class="card">
+    <div class="ikon">🖥️</div>
+    <h3>Presentasi PowerPoint</h3>
+    <p>
+        Jasa pembuatan slide presentasi
+        untuk bisnis, pendidikan, seminar,
+        dan kebutuhan lainnya.
+    </p>
+    <button class="tombol"
+        onclick="pesan('Presentasi PowerPoint')">
+        Pesan Sekarang
+    </button>
+</div>
+
+<!-- LAYANAN 6: DESAIN SERTIFIKAT -->
+<div class="card">
+    <div class="ikon">🏅</div>
+    <h3>Desain Sertifikat</h3>
+    <p>
+        Desain sertifikat penghargaan,
+        pelatihan, seminar, dan kegiatan
+        organisasi.
+    </p>
+    <button class="tombol"
+        onclick="pesan('Desain Sertifikat')">
+        Pesan Sekarang
+    </button>
+</div>
+
+<!-- LAYANAN 7: INVOICE DAN KWITANSI -->
+<div class="card">
+    <div class="ikon">🧾</div>
+    <h3>Invoice &amp; Kwitansi</h3>
+    <p>
+        Pembuatan template invoice,
+        nota pembayaran, dan kwitansi
+        untuk kebutuhan usaha.
+    </p>
+    <button class="tombol"
+        onclick="pesan('Invoice dan Kwitansi')">
+        Pesan Sekarang
+    </button>
+</div>
+
+<!-- LAYANAN 8: COMPANY PROFILE -->
+<div class="card">
+    <div class="ikon">🏢</div>
+    <h3>Pembuatan Company Profile</h3>
+    <p>
+        Pembuatan profil perusahaan
+        dengan desain profesional
+        untuk kebutuhan promosi bisnis.
+    </p>
+    <button class="tombol"
+        onclick="pesan('Pembuatan Company Profile')">
+        Pesan Sekarang
+    </button>
+</div>
+
+<!-- LAYANAN 9: POSTER DAN BROSUR -->
+<div class="card">
+    <div class="ikon">🎨</div>
+    <h3>Desain Poster &amp; Brosur</h3>
+    <p>
+        Desain poster promosi,
+        brosur digital, pamflet,
+        dan materi pemasaran.
+    </p>
+    <button class="tombol"
+        onclick="pesan('Desain Poster dan Brosur')">
+        Pesan Sekarang
+    </button>
+</div>
+
+<!-- LAYANAN 10: MAKALAH DAN LAPORAN -->
+<div class="card">
+    <div class="ikon">📝</div>
+    <h3>Pengetikan Makalah &amp; Laporan</h3>
+    <p>
+        Pengetikan dan perapian
+        makalah serta laporan berdasarkan
+        materi dari pelanggan.
+    </p>
+    <button class="tombol"
+        onclick="pesan('Pengetikan Makalah dan Laporan')">
+        Pesan Sekarang
+    </button>
+</div>
+
+<!-- LAYANAN 11: KONVERSI PDF -->
+<div class="card">
+    <div class="ikon">📑</div>
+    <h3>Konversi PDF ke Word</h3>
+    <p>
+        Mengubah dokumen PDF menjadi
+        file Word yang dapat diedit
+        serta merapikan formatnya.
+    </p>
+    <button class="tombol"
+        onclick="pesan('Konversi PDF ke Word')">
+        Pesan Sekarang
+    </button>
+</div>
+
+<!-- LAYANAN 12: FORMULIR DIGITAL -->
+<div class="card">
+    <div class="ikon">📋</div>
+    <h3>Pembuatan Formulir Digital</h3>
+    <p>
+        Pembuatan formulir online
+        untuk pendaftaran, survei,
+        dan kebutuhan administrasi.
+    </p>
+    <button class="tombol"
+        onclick="pesan('Pembuatan Formulir Digital')">
+        Pesan Sekarang
+    </button>
+</div>
+
 
         </div>
     </section>
